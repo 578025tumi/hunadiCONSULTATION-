@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khanyisa Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen text-slate-100" style="background: var(--bg-primary);">
+  <!-- Corporate Background -->
+  <div class="corporate-bg">
+    <div class="corporate-orb corporate-orb-1"></div>
+    <div class="corporate-orb corporate-orb-2"></div>
+    <div class="corporate-orb corporate-orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50" style="background: rgba(10,15,30,0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#/" class="flex items-center gap-2.5 text-lg font-bold text-white tracking-tight">
+        <span class="flex items-center justify-center w-8 h-8 rounded-lg font-extrabold text-sm" style="background: linear-gradient(135deg, var(--brand), var(--brand-light)); color: white;">K</span>
+        <span>HANYISA</span>
+      </a>
+      
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#/" class="nav-link text-sm text-slate-300 hover:text-white" data-route="/">Home</a>
+        <a href="#/packages" class="nav-link text-sm text-slate-300 hover:text-white" data-route="/packages">Packages</a>
+        <a href="#/waitlist" class="nav-link text-sm text-slate-300 hover:text-white" data-route="/waitlist">Join Waitlist</a>
+        <a href="#/admin" class="nav-link text-sm text-slate-300 hover:text-white" data-route="/admin">Admin</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="mobileMenuBtn" class="hamburger md:hidden" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-y-0 right-0 w-64 p-6 z-50 md:hidden" style="background: var(--bg-secondary); border-left: 1px solid var(--border);">
+      <button id="closeMobileMenu" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+      <div class="flex flex-col gap-4 mt-12">
+        <a href="#/" class="nav-link text-slate-300 hover:text-white py-2" data-route="/">Home</a>
+        <a href="#/packages" class="nav-link text-slate-300 hover:text-white py-2" data-route="/packages">Packages</a>
+        <a href="#/waitlist" class="nav-link text-slate-300 hover:text-white py-2" data-route="/waitlist">Join Waitlist</a>
+        <a href="#/admin" class="nav-link text-slate-300 hover:text-white py-2" data-route="/admin">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div id="app" class="relative z-10 mx-auto max-w-6xl px-4 py-8">
+    <div id="pageContainer"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div id="modalContent" class="modal-content"></div>
+  </div>
+
+  <script src="router.js"></script>
+  <script src="pages.js"></script>
+  <script src="store.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
