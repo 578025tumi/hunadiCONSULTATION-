@@ -1,10 +1,10 @@
 {
   "app": {
-    "name": "Khanyisa Consulting",
-    "tagline": "Empowering Your Business Journey",
-    "hero_title": "Build. Comply. Grow.",
-    "hero_subtitle": "Professional business consulting for South African entrepreneurs — from registration to operations.",
-    "cta_primary": "Get Started",
+    "name": "Hunadi Consults",
+    "tagline": "Guiding Your Business Across the Stars",
+    "hero_title": "Align. Launch. Ascend.",
+    "hero_subtitle": "Celestial business consulting for South African entrepreneurs — from registration to orbit.",
+    "cta_primary": "Begin Your Journey",
     "cta_secondary": "View Packages",
     "nav_home": "Home",
     "nav_packages": "Packages",
@@ -120,7 +120,7 @@
   },
   "confirmation": {
     "title": "Application Received!",
-    "subtitle": "Thank you for choosing Khanyisa Consulting.",
+    "subtitle": "Thank you for choosing Hunadi Consults.",
     "timeline_title": "What Happens Next",
     "step_1": "Application review within 24-48 hours",
     "step_2": "A consultant will be assigned to your case",
@@ -173,14 +173,14 @@
     "select_placeholder": "Select an option"
   },
   "footer": {
-    "company": "Khanyisa Consulting",
-    "tagline": "Empowering South African businesses to build, comply, and grow.",
+    "company": "Hunadi Consults",
+    "tagline": "Guiding South African businesses to align, launch, and ascend.",
     "quick_links": "Quick Links",
     "contact_us": "Contact Us",
-    "email": "info@khanyisaconsulting.co.za",
+    "email": "info@hunadiconsultations.co.za",
     "phone": "+27 12 345 6789",
     "whatsapp": "WhatsApp Us",
-    "copyright": "© 2024 Khanyisa Consulting. All rights reserved.",
+    "copyright": "© 2024 Hunadi Consults. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   }
